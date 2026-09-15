@@ -22,7 +22,7 @@ jobs:
 
       - name: Run Code Scan
         run: |
-          flake8 even_odd.py
+          flake8 src/even_odd.py
 
       - name: Run Python Application
         run: |
