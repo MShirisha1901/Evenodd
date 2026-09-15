@@ -16,6 +16,14 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install Dependencies
+        run: |
+          pip install flake8
+
+      - name: Run Code Scan
+        run: |
+          flake8 even_odd.py
+
       - name: Run Python Application
         run: |
           python src/even_odd.py
